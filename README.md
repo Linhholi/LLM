@@ -1,25 +1,12 @@
-# 🦙📚 LlamaIndex - Chat with the Streamlit docs
+# 🦙📚 Building a chatbot for the show The Big Bang Theory
 
-Build a chatbot powered by LlamaIndex that augments GPT 3.5 with the contents of the Streamlit docs (or your own data).
+## Step 1: Extracting data
 
-## Overview of the App
+- Using Python and BeautifulSoup to extract the show's scripts from Netflix and https://bigbangtrans.wordpress.com/
 
-<img src="app.png" width="75%">
+## Step 2: Building the app
 
-- Takes user queries via Streamlit's `st.chat_input` and displays both user queries and model responses with `st.chat_message`
-- Uses LlamaIndex to load and index data and create a chat engine that will retrieve context from that data to respond to each user query
+- By Streamlit: Using Streamlit, Llamaindex, and openAI (https://blog.streamlit.io/build-a-chatbot-with-custom-data-sources-powered-by-llamaindex/)
+- By PrivateGPT: https://github.com/imartinez/privateGPT
+  <img width="1276" alt="image" src="https://github.com/Linhholi/LLM/assets/103567688/094f8ab4-dbea-4ab7-b70c-5bf9d12f6250">
 
-## Demo App
-
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://llamaindex-chat-with-docs.streamlit.app/)
-
-## Get an OpenAI API key
-
-You can get your own OpenAI API key by following the following instructions:
-1. Go to https://platform.openai.com/account/api-keys.
-2. Click on the `+ Create new secret key` button.
-3. Next, enter an identifier name (optional) and click on the `Create secret key` button.
-
-## Try out the app
-
-Once the app is loaded, enter your question about the Streamlit library and wait for a response.
